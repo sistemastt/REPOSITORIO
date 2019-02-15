@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Mobil SGT</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Sistema de Gestion</string>
+    <string name="nav_header_subtitle">Departamento de Sistemas</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main__inventario__crudo">Inventario Crudos</string>
+    <string name="title_activity_main__login">Login</string>
+    <string name="title_activity_main__inventario__prod_terminado">Inventario Prod. Terminados</string>
+    <string name="title_activity_main__inventario__tej_cortes">MainActivity_Inventario_TejCortes
+    </string>
+    <string name="title_activity_main__tejeduria_cortes">Tejeduria Cortes</string>
+    <string name="title_activity_main__tejeduria__cortes__proceso">
+        Tejeduria Proceso
+    </string>
+    <string name="title_activity_main__tejeduria__cortes__consultas">
+        Tejeduria Consultas
+    </string>
+
+    <string name="title_activity_main__prep_partidas__ctc015">CTC015 Preparacion Partidas
+    </string>
+    <string name="title_activity_main__muestras">Muestras Inventario</string>
+    <string name="title_activity_main__configuracion">Configuracion de Servicio</string>
+    <string name="title_activity_main__inventario__fab085">MainActivity_Inventario_FAB085</string>
+    <string name="title_activity_main__fab083">MainActivity_FAB083</string>
+</resources>

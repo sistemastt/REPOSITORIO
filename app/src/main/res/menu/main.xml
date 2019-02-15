@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_descargar_drive"
+        android:orderInCategory="100"
+        android:title="Nueva version"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_versionactual"
+        android:orderInCategory="100"
+        android:title="mi version actua"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_configuracion"
+        android:orderInCategory="100"
+        android:title="Conexion WS"
+        app:showAsAction="never" />
+
+</menu>

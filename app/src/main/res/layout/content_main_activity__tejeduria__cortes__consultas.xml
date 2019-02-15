@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity_Tejeduria_Cortes_Consultas"
+    tools:showIn="@layout/activity_main__tejeduria__cortes__consultas">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@+id/tabhost1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkfecha"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:text="Fecha" />
+
+                                    <EditText
+                                        android:id="@+id/txtfecini"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="date"
+                                        android:maxLength="10"
+                                        android:padding="5dp"
+                                        android:text="02/02/2018"
+                                        android:textAlignment="center" />
+
+                                    <EditText
+                                        android:id="@+id/txtfecfin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="date"
+                                        android:maxLength="10"
+                                        android:padding="5dp"
+                                        android:text="01/01/2019"
+                                        android:textAlignment="center" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkorden"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="N° Ord. P. Tel." />
+
+                                    <EditText
+                                        android:id="@+id/txtorden"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkfraccion"
+                                        android:layout_width="120dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Frac. Ord.P.Tel." />
+
+                                    <EditText
+                                        android:id="@+id/txtfraccion"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chktelar"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="N° Telar" />
+
+                                    <EditText
+                                        android:id="@+id/txttelar"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkturno"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Turno" />
+
+                                    <EditText
+                                        android:id="@+id/txtturno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkplegador"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cod. Plegador" />
+
+                                    <EditText
+                                        android:id="@+id/txtcodplegador"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chktrabajador"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        android:text="Trabajador" />
+
+                                    <EditText
+                                        android:id="@+id/txttrabajador"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkarticulobase"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        android:text="Articulo Base" />
+
+                                    <EditText
+                                        android:id="@+id/txtarticulobase"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorTextBoxUsables"
+                                        android:ems="10"
+                                        android:inputType="textPersonName"
+                                        android:padding="5dp"
+                                        android:textAlignment="center" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/chkordenado"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0"
+                                        android:text="Ordenado" />
+
+                                    <Spinner
+                                        android:id="@+id/spnorden"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="5dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/btnsalir"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:text="Salir" />
+
+                                    <Button
+                                        android:id="@+id/btnbuscar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:text="Buscar" />
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnverdetalles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Ver Detalles" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TableLayout
+                                    android:id="@+id/TableLayout02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TableRow
+                                        android:id="@+id/TableRow02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/colorPrimary">
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text=""
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColUrdido"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="N° Urdido"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColFraccion"
+                                            android:layout_width="60dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Fracc."
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColSecuencia"
+                                            android:layout_width="40dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Sec."
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColPlegador"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:padding="2dp"
+                                            android:text="Plegador"
+                                            android:textColor="@android:color/background_light"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColTelar"
+                                            android:layout_width="50dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Telar"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColMetros"
+                                            android:layout_width="70dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Metros"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColFecha"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Fecha"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColHora"
+                                            android:layout_width="50dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Hora"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColTurno"
+                                            android:layout_width="50dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Turno"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColCodTra"
+                                            android:layout_width="60dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="C.Trab."
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColNomTra"
+                                            android:layout_width="200dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="N. Trabajador"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/ColObservacion"
+                                            android:layout_width="150dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Observacion"
+                                            android:textStyle="bold" />
+                                        <TextView
+                                            android:id="@+id/ColArticuloBase"
+                                            android:layout_width="120dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Articulo Base"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColCodCrudo"
+                                            android:layout_width="120dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Cod. Crudo"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/ColDesArticulo"
+                                            android:layout_width="200dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:textColor="@android:color/background_light"
+                                            android:padding="2dp"
+                                            android:text="Articulo"
+                                            android:textStyle="bold" />
+
+
+
+                                    </TableRow>
+
+                                </TableLayout>
+
+                                <GridView
+                                    android:id="@+id/grilladetalle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:cacheColorHint="#00000000"
+                                    android:clipChildren="true"
+                                    android:horizontalSpacing="5dp"
+                                    android:stretchMode="columnWidth"
+                                    android:verticalSpacing="5dp" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

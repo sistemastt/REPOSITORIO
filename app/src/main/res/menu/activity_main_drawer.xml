@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_menu_cab"
+            android:title="Inicio" />
+
+        <item android:title="Inventarios" android:icon="@drawable/ic_menu_cab"  android:id="@+id/nav_inventario_cab">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_inventario_prod_terminado"
+                        android:icon="@drawable/ic_apuntes_inventario"
+                        android:title="Inventario Prod. terminado" />
+
+                    <item
+                        android:id="@+id/nav_inventario_crudo"
+                        android:icon="@drawable/ic_apuntes_inventario"
+                        android:title="Inventario Crudo" />
+
+
+                    <item
+                        android:id="@+id/nav_inventario_fab085"
+                        android:icon="@drawable/ic_apuntes_inventario"
+                        android:title="Inventario FAB085" />
+                </group>
+            </menu>
+        </item>
+
+
+
+        <item android:title="Procesos" android:icon="@drawable/ic_menu_cab"  android:id="@+id/nav_procesos">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_procesos_fab083"
+                        android:icon="@drawable/ic_style_black_24dp"
+                        android:title="FAB083" />
+                </group>
+            </menu>
+        </item>
+
+
+
+
+
+        <item android:title="Area2" android:icon="@drawable/ic_menu_cab"  android:id="@+id/nav_Area2">
+            <menu>
+                <group android:checkableBehavior="single">
+
+
+                    <item
+                        android:id="@+id/nav_tejeduria_corte"
+                        android:icon="@drawable/ic_apuntes_inventario"
+                        android:title="Tejeduria - Cortes" />
+
+                    <item
+                        android:id="@+id/nav_preppartidas_ctc015"
+                        android:icon="@drawable/ic_apuntes_inventario"
+                        android:title="Prep Partidas CTC015" />
+
+                    <item
+                        android:id="@+id/nav_Almacen_traslado"
+                        android:icon="@drawable/ic_menu_manage"
+                        android:title="Traslados" />
+
+
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_muestras"
+            android:icon="@drawable/ic_menu_cab"
+            android:title="Muestras" />
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
